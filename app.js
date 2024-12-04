@@ -159,11 +159,13 @@ Complete the exercise in the space below:
 */
 function convertTemperature (temp, scale){
     if(scale === "C"){
-        return '(Fahrenheit)'
-        //(2°C × 9/5) + 32 = 35.6°F
+        temp = temp *(9/5) + 32
+        return `${temp} (Fahrenheit)`
+
 } else if (scale === "F"){
-    return '(Celsius)'
-    //(40°F − 32) × 5/9 = 4.444°C
+    temp = (temp - 32) * (5/9)
+    return `${temp} (Celsius)`
+
 }}
 
 
@@ -186,6 +188,9 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-function basicCalculator()
+function basicCalculator (number1, number2, string){
+    return number1, string, number2
+}
+
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
